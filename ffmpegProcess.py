@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from tqdm import tqdm # used to measure remaining time progress
 
-def convert(seconds): 
+def convert(seconds):
 
     """Function to convert the time input in seconds to format HH:MM:SS
     
@@ -97,6 +97,6 @@ vidFormat='mp4'
 timeWindow=[4,4]
 fps=30
 
-videoChopping(folder, timeWindow=[4,4], fps=30, vidFormat='mp4')
+videoChopping(folder, timeWindow=[4,30], fps=30, vidFormat='mp4')
 fileList(folder+'/output')
 videoConcat(folder+'/output')
